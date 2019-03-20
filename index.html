@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home | Basic Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-  
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Home | Basic Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="wrapper">
+        <h1>Code Louie</h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Content Section -->
     <div class="wrapper">
-      <h1>Code Louie</h1>
-      <nav>
+      <!-- LHS -->
+      <section id="left-column">
+        <h2>About Me</h2>
+
+        <img
+          src="./assets/images/tiger.png"
+          alt="Picture of a tiger"
+          class="inline-image"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam natus
+          fuga maxime deleniti! Repudiandae laborum deleniti ipsum, nulla alias
+          nesciunt eos voluptatibus a delectus aspernatur quo suscipit quaerat
+          reprehenderit repellendus?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem at
+          dignissimos, accusantium quia veritatis omnis, animi autem maxime nisi
+          quis tempore vel quas laborum distinctio repellat eum quisquam enim
+          eius!
+        </p>
+      </section>
+
+      <!-- RHS -->
+      <aside id="right-column">
+        <h3>Connect With Me</h3>
         <ul>
-          <li><a href="./index.html">About</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#" target="blank"><img src="./assets/images/github.png"></a></li>
+          <li><a href="#" target="blank"><img src="./assets/images/instagram.png"></a></li>
+          <li><a href="#" target="blank"><img src="./assets/images/linkedin.png"></a></li>
+          <li><a href="#" target="blank"><img src="./assets/images/netflix.png"></a></li>
+          <li><a href="#" target="blank"><img src="./assets/images/reddit.png"></a></li>
         </ul>
-      </nav>
+      </aside>
     </div>
-  </header>
 
-  <div class="wrapper">
-    <section id="left-column">
-      <h2>About Me</h2>
+    <!-- make sure anything below the two floated element will be beneath them -->
+    <div class="clearfix"></div>
 
-      <img src="./assets/images/tiger.png" alt="Picture of a tiger" class="inline-image">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quasi atque soluta est qui, illo harum numquam asperiores necessitatibus ipsam, voluptatibus sed quam voluptates vero, ipsa ad incidunt ipsum nulla.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt aliquid sit, tempore tenetur deleniti. Sunt, modi voluptas tempora ducimus dolore cumque illo? Quae alias atque odit id quam veniam.</p>
-    </section>
+    <!-- FOOTER -->
+    <footer>
+      &copy:2019 Code Louie
+    </footer>
 
-    <aside id="right-column">
-      <h3>Connect with me</h3>
-
-      <ul>
-        <li><a href="#" target="blank"><img src="./assets/images/github.png"></a></li>
-        <li><a href="#" target="blank"><img src="./assets/images/instagram.png"></a></li>
-        <li><a href="#" target="blank"><img src="./assets/images/linkedin.png"></a></li>
-        <li><a href="#" target="blank"><img src="./assets/images/netflix.png"></a></li>
-        <li><a href="#" target="blank"><img src="./assets/images/reddit.png"></a></li>
-      </ul>
-    </aside>
-  </div>
-
-  <!-- make sure anything below the two floated elements will be beneath them -->
-  <div class="clearfix"></div>
-
-  <footer>
-    &copy:2019 name
-  </footer>
-
-</body>
+  </body>
 </html>
